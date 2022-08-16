@@ -18,5 +18,8 @@
   "homepage": "https://github.com/RyanOfEastview/org-chart#readme",
   "devDependencies": {
     "jest": "^28.1.3"
+  },
+  "dependencies": {
+    "inquirer": "^9.1.0"
   }
 }
