@@ -36,8 +36,56 @@ const questions = [
         name: "name", 
         message: "What is the employee's role?",
         choices: ["Engineer", "Intern", "Manager"]
-    }
-    
+    } 
+]
 
-    
+// Questions for managers
+managerQuestions = [
+    {
+        type: "input",
+        name: "officeNumber",
+        message: "What is the number of the manager's office?",
+        validate: officeNumber => {
+            if (officeNumber) {
+                return true;
+            }else{
+                console.log("Office number is mandatory.");
+                return false;
+            }
+        }
+    }
+]
+
+// Questions for engineers
+engineerQuestions = [
+    {
+        type: "input",
+        name: "github",
+        message: "What is GitHub username of the engineer?",
+        validate: github => {
+            if (github) {
+                return true;
+            }else{
+                console.log("GitHub username is mandatory.");
+                return false;
+            }
+        }
+    }
+]
+
+// Questions for interns
+internQuestions = [
+    {
+        type: "input",
+        name: "school",
+        message: "What school did the intern attend?",
+        validate: school => {
+            if (school) {
+                return true;
+            }else{
+                console.log("Intern's school is mandatory.");
+                return false;
+            }
+        }
+    }
 ]
