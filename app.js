@@ -89,3 +89,25 @@ internQuestions = [
         }
     }
 ]
+
+// Initialization
+const init = () => {
+    if (fs.existsSync(filePath)) {
+        inquirer.createPromptModule({
+            type: "confirm",
+            message: "index.html already exists.  Would you like to replace it?",
+            name: "overwrite"
+        }).then(async (response) => {
+            let overwrite = response.overwrite;
+            if(await overwrite === true) {
+                console.log("Enter organizational chart information:")
+                newEmployee()
+            }else if (await overwrite === false) {
+                console.log("index.html will not be replaced.")
+            }
+        })
+    }else {
+        console.log("Welcome to your org chart generator.  Please enter your team's details below:")
+        newEmployee()
+    }
+};
