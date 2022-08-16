@@ -1,0 +1,22 @@
+{
+  "name": "org-chart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RyanOfEastview/org-chart.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RyanOfEastview/org-chart/issues"
+  },
+  "homepage": "https://github.com/RyanOfEastview/org-chart#readme",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
+}
