@@ -106,7 +106,7 @@ const init = () => {
                 console.log("index.html will not be replaced.")
             }
         })
-    }else {
+    }else{
         console.log("Welcome to your org chart generator.  Please enter your team's details below:")
         newEmployee()
     }
@@ -148,6 +148,38 @@ const newEmployee = async () => {
                 addEmployee(employeesArr);
             });
         }
-
     });
 };
+
+//This function will allow you to add employees until you say 'no'.  It will then generate an index.html file and place it in the root directory.
+const addEmployee = async (array) => {
+    await inquirer
+    .prompt({
+        type: "confirm",
+        name: "addEmployee",
+        message: "Would you like to add a new employee?"
+
+    }).then(async (response) => {
+        var createEmployee = response.addEmployee;
+        if (await createEmployee === true) {
+            newEmployee();
+        }
+        else if (await createEmployee === false) {
+        if (!fs.existsSync(fileDirectory)) {
+            fs.mkdirSync(fileDirectory)
+            }
+
+            // initialize the generateHTML function
+            fs.writeFile(filePath, renderHTML(array), (err) => {
+
+            if (err) {
+                return console.log(err);
+            }
+
+                console.log("Success!  You can find your index.html file in the 'dist' folder.");
+            });
+        }
+    })
+};
+
+init();
