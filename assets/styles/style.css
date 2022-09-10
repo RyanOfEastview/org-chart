@@ -1,0 +1,15 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+li:hover {
+  background-color: lightgrey;
+}
+
+a {
+  color: orangered;
+}
+a:hover {
+  background-color: olive;
+  border-radius: 10%;
+}
