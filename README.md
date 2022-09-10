@@ -7,15 +7,6 @@
   ## Description
     The Org Chart Generator is Node.js command-line application thta takes in data about employees on team and generates an HTML webpage that displays a summary of each person.
 
-  ## Table of Contents
-    - [Description](#description)
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Contribution](#contribution)
-    - [Tests](#tests)
-    - [Questions](#questions)
-    - [License](#license)
-
   ## Installation
   In your terminal, install the required packages by typing 'npm i'.  Once install completes, run the application by typing 'node index'.
 
