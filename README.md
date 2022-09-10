@@ -14,15 +14,13 @@
   The purpose of this project is to provide a quick and easy way to generate a clean looking style of README that will be the same for all projects.
 
   ## Contributions
-  undefined
-
-  ## Tests
-  undefined
+  Ryan McCarthy
 
   ## Questions
-  undefined
   Reach out with any questions you may have to: RyanMcCarthy613@gmail.com
 
   ## License
   This applicatinos uses the Mozilla license.
 
+  ## Link to video
+  https://drive.google.com/file/d/1juajuEtWf6hWfWX66vqXoO5UW74XYUyz/view
